@@ -4,4 +4,4 @@ aclocal
 autoconf
 autoheader
 automake --add-missing
-./configure "$@"
+./configure LDFLAGS="-static" "$@"
