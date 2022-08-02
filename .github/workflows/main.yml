@@ -59,7 +59,7 @@ jobs:
         cd ..
         rm -rf depdir
     - name: autogen
-      run: ./autogen.sh --enable-static --disable-shared
+      run: ./autogen.sh LDFLAGS=-static --disable-shared
     - name: make
       run: make
     - name: make install
